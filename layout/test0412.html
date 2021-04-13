@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap {background: #fff;}
+        #main {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #header {
+            height: 70px;
+            padding-top: 30px;
+            
+        }
+
+        #header .innerheader {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+
+        #header .innerheader .nav {
+        }
+        #header .innerheader .nav ul {
+            list-style: none;
+            display: inline;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header .innerheader .nav ul li {
+            padding: 0 20px;
+        }
+
+        #header .innerheader .log {}
+
+        #nav {
+            height: 50px;
+            background: #eee;
+        }
+        #nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-content: space-between;
+        }
+        #nav li {
+            padding: 0 10px;
+            padding-top: 10px;
+        }
+        #banner {
+            height: 400px;
+            background-image: url(/layout/img/banner-bg2.png);
+            padding-top: 60px;
+            text-align: center;
+            position: relative;
+        }
+        .banner_text {
+            color: #fff;
+            line-height: 2;
+        }
+        .banner_text .underlined {
+            
+        }
+        
+        .banner_text h1 {
+            font-size: 40px;
+            line-height: 1.5;
+            padding: 10px 0;
+        }
+        .banner_btn {
+            width: 200px;
+            height: 40px;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 40%;
+            line-height: 40px;
+            position: absolute;
+            bottom: 30px;left: 50%;
+            transform: translate(-50%);
+        }
+        .banner_btn .btn {}
+        #contents {
+            height: 600px;
+            background: #eee;
+        }
+        #contents .container {
+            height: 600px;
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            padding-top: 100px;
+        }
+        .container .left_side {
+            width: 500px;
+            height: 600px;
+            float: left;
+            padding-right: 50px;
+        }
+        .container .right_side{
+            padding-left: 50px;
+            padding-top: 50px;
+            width: 500px;
+            height: 600px;
+            float: left;
+        }
+        .container .right_side .box {
+            background: #fff;
+            padding: 70px;
+            border-radius: 10px;
+            margin: 30px 10px;
+            padding-top: 30px;
+        }
+        .container .right_side .box p {
+            float: left;
+        }
+        .container .right_side .box a {
+            float: right;
+            text-decoration: none;
+        }
+        
+        .container .right_side .box .underlined {
+            position: relative;
+            z-index: 1;
+        }
+        .container .right_side .box .underlined::after {
+            content: '';
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+            width: 100%;
+            height: 4px;
+            background: #00ccff81;
+            z-index: -1;
+            border-radius: 30px;
+        }
+        #footer {
+            height: 200px;
+            background: #111;
+            text-align: center;
+        }
+        #footer .foot_top {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 30px;
+            line-height: 17px;
+            font-weight: 500;
+            letter-spacing: .47px;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+        }
+
+        #footer .login {
+            top: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            width: 80px;
+            height: 29px;
+            border-radius: 4px;
+            background: #323232;
+            font-size: 13px;
+            letter-spacing: -.5px;
+            color: #999;
+        }
+
+        #footer p {
+            margin-top: 30px;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -.3px;
+            color: hsla(0, 0%, 100%, .3);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header id="header">
+                <header class="innerheader">
+                    <article class="logo">NAVER<BR>INFLUENCER CENTER</article>
+                    <nav class="nav">
+                        <ul>
+                            <li>인플루언서 안내</li>
+                            <li>광고수익 혜택</li>
+                            <li>성장 지원 프로그램</li>
+                            <li>브랜드 커넥트</li>
+                            <li>공지</li>
+                        </ul>
+                    </nav>
+                    <aside class="log">로그인</aside>
+                </header>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li>크리에이터 워크숍</li>
+                    <li>슈퍼애드</li>
+                    <li>엑스퍼트 컨설팅</li>
+                    <li>멤버십 혜택</li>
+                    <li>어워드</li>
+                </ul>
+            </nav>
+            <div id="banner">
+                <section class="banner_text">
+                    <p class="underlined">엑스퍼트 컨설팅</p>
+                    <h1>법률, 세무부터 동영상 제작까지!<br>지식iN 엑스퍼트 상담, 클래스 이용을 지원합니다.</h1>
+                    <p>혼자서는 해결하기 어려웠던 문제들,<br> 1인 최대 10만원의 엑스퍼트 쿠폰으로 전문가의 도움을 받아보세요.</p>
+                    <em>지급 조건 상세보기</em>
+                </section>
+                <section class="banner_btn">
+                    <span class="btn">내 expert 쿠폰 확인하기</span>
+                </section>
+            </div>
+            <div id="contents">
+                <article class="container">
+                    <section class="left_side">
+                        <img src="https://ncreatorsnext.pstatic.net/img/support_p@3x.b73b570f3bcd8c3cba47709c1e8b98d9.png" width = "600px" height="439px"alt="">
+                    </section>
+                    <section class="right_side">
+                        <section class="box">
+                            <p>이 이미지 쓰고 싶은데<br><span class="underlined">저작권에 문제 없을까요?</span></p>
+                            <a href="#c">법률 상담 받기</a>
+                        </section>
+                        <section class="box">
+                            <p><span class="underlined">광고 수익에 대한 세금 신고</span><br>꼭 해야하나요? 어떻게 하죠?</p>
+                            <a href="#c">세무 상담 받기</a>
+                        </section>
+                        <section class="box">
+                            <p>영상 콘텐츠 만들고 싶은데,<br><span class="underlined">동영상 제작을 배우고 싶어요!</span></p>
+                            <a href="#c">동영상 제작 상담</a>
+                        </section>
+                    </section>
+                </article>
+            </div>
+            <footer id="footer">
+                <section class="foot_top">TOP</section>
+                <section class="login">로그인</section>
+                <p>NAVER Copyright © NAVER Corp. All Rights Reserved.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

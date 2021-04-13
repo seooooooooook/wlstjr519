@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      background: #999;
+    }
+
+    main {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      height: 100px;
+      background: #111;
+    }
+
+    #banner {
+      height: 300px;
+      background: #222;
+    }
+
+    .content1 {
+      overflow: hidden;
+    }
+
+    .c1_1 {
+      width: 30%;
+      height: 600px;
+      background: #333;
+      float: left;
+    }
+
+    .c1_2 {
+      width: 70%;
+      height: 300px;
+      background: #444;
+      float: left;
+    }
+
+    .c1_3 {
+      width: 70%;
+      height: 300px;
+      background: #777;
+      float: left;
+    }
+
+    .content2 {
+      overflow: hidden;
+
+    }
+
+    .content2 .c2_1 {
+      width: 33.3333%;
+      height: 400px;
+      background: #111;
+      float: left;
+    }
+
+    .content2 .c2_2 {
+      width: 33.3333%;
+      height: 400px;
+      background: #222;
+      float: left;
+    }
+
+    .content2 .c2_3 {
+      width: 33.3333%;
+      height: 400px;
+      float: left;
+      background: #333;
+    }
+
+    .content3 {
+      height: 300px;
+      background: #555;
+      padding: 10%;
+      overflow: hidden;
+    }
+
+    .content3>article {
+      height: 300px;
+      width: 23%;
+      margin: 1%;
+      background: #111;
+      float: left;
+
+    }
+
+    footer {
+      height: 100px;
+      background: #666;
+    }
+
+    @media (max-width:1220px) {
+      main {
+        width: 100%;
+      }
+
+      .content2 .c2_1 {
+        width: 50%;
+      }
+
+      .content2 .c2_2 {
+        width: 50%;
+      }
+
+      .content2 .c2_3 {
+        display: none;
+      }
+    
+
+      .content3>article {
+        width: 31.3333%;
+      }
+
+      .content3>article:last-child {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+
+      .content2 .c2_1 {
+        width: 100%;
+        height: 200px;
+      }
+
+      .content2 .c2_2 {
+        width: 100%;
+        height: 200px;
+      }
+    
+    }
+
+    @media (max-width: 480px) {
+      .c1_1 {
+        width: 100%;
+        height: 300px;
+      }
+
+      .c1_2 {
+        width: 100%;
+      }
+
+      .c1_3 {
+        width: 100%;
+      }
+
+      .content3>article {
+        width: 98%;
+        height:100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <main>
+      <header></header>
+      <div id="banner"></div>
+      <article class="content1">
+        <article class="c1_1"></article>
+        <article class="c1_2"></article>
+        <article class="c1_3"></article>
+      </article>
+      <article class="content2">
+        <article class="c2_1"></article>
+        <article class="c2_2"></article>
+        <article class="c2_3"></article>
+      </article>
+      <article class="content3">
+        <article class="c3_1"></article>
+        <article class="c3_2"></article>
+        <article class="c3_3"></article>
+        <article class="c3_4"></article>
+      </article>
+      <footer></footer>
+    </main>
+  </div>
+</body>
+
+</html>

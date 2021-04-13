@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    header {
+      height: 100px;
+      width: 100%;
+      background-color: #e8f5e9 ;
+    }
+    aside {
+      height: 800px;
+      width: 30%;
+      background-color: #c8e6c9 ;
+      float: left;
+    }
+    article {
+      height: 800px;
+      width: 40%;
+      background-color: #a5d6a7 ;
+      float: left;
+    }
+    section {
+      height: 800px;
+      width: 30%;
+      background-color: #81c784 ;
+      float: left;
+    }
+    footer {
+      height: 100px;
+      width: 100%;
+      background-color: #66bb6a ;
+      clear: both;
+    }
+    
+    @media (max-width:1220px){
+      aside {
+        width: 40%;
+      }
+      article {
+        width: 60%;
+      }
+      section {
+        width: 100%;
+        float: none;
+        clear: both;
+      }
+    }
+    @media (max-width:900px){
+      aside {
+        height: 300px;
+        width: 100%;
+        float: none;
+      }
+      article {
+        height: 300px;
+        width: 100%;
+        float: none;
+      }
+      section {
+        height: 300px;
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap" class="clearfix">
+    <header></header>
+    <aside></aside>
+    <article></article>
+    <section></section>
+    <footer></footer>
+  </div>
+</body>
+</html>
