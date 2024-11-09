@@ -1,0 +1,491 @@
+/* scroll */
+.scroll {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100000;
+}
+
+/* frame*/
+.frame {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+/*bubble*/
+.bubble_wrap {
+  div {
+    h4 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2.14vw;
+      font-family: $font-ad;
+      white-space: nowrap;
+    }
+  }
+  .bubble1 {
+    transform: translate(-200%, -137%);
+    width: 17.14vw;
+    height: 17.14vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 116, 1);
+    z-index: 3;
+  }
+  .bubble2 {
+    transform: translate(-300%, -100%);
+    width: 12.76vw;
+    height: 12.76vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 163, 1);
+  }
+  .bubble3 {
+    transform: translate(+100%, -140%);
+    width: 17.92vw;
+    height: 17.92vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 116, 1);
+  }
+  .bubble4 {
+    transform: translate(-250%, +50%);
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 116, 1);
+  }
+  .bubble5 {
+    transform: translate(120%, +40%);
+    width: 16.41vw;
+    height: 16.41vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 116, 1);
+    z-index: 3;
+  }
+  .bubble6 {
+    transform: translate(+200%, +30%);
+    width: 12.76vw;
+    height: 12.76vw;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 163, 1);
+  }
+}
+
+/* fixed */
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+/* fixedCenter */
+.fixedCenter {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  white-space: nowrap;
+}
+
+/* layout */
+
+/*section1*/
+#contents {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+#section1 {
+  display: block;
+  height: 6063px;
+  .sec1 {
+    h1 {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      font-size: 8vw;
+      text-align: center;
+      color: #fff;
+      z-index: 100;
+      transform: translate(15%, -90%);
+      strong {
+        display: block;
+      }
+    }
+    .box {
+      width: 25vw;
+      height: 70vh;
+      background: #de0804;
+      transform: translate(-50%, -50%) rotate(35deg);
+    }
+    .char1 {
+      width: 45vw;
+      height: 45vw;
+      background: url(../img/Saly-1.png);
+      background-size: cover;
+      transform: translate(-100%, -50%);
+    }
+    .desc {
+      font-family: "NanumSquare", sans-serif;
+      transform: translate(30%, 250%);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+}
+
+/*section1*/
+/*section2*/
+
+#section2 {
+  display: block;
+  height: 12000px;
+  .sec2 {
+    h2 {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      font-size: 6vw;
+      text-align: left;
+      color: #fff;
+      z-index: 100;
+      transform: translate(15%, -90%);
+      strong {
+        display: block;
+      }
+    }
+    .box {
+      width: 75.2778vw;
+      height: 52.5vw;
+      background: #00b2ff;
+      transform: translate(-50%, -50%) rotate(35deg);
+    }
+    .char2 {
+      width: 30vw;
+      height: 53vw;
+      background: url(../img/Saly-14.png);
+      background-size: cover;
+      transform: translate(-100%, -50%);
+      z-index: 10;
+    }
+    .desc {
+      font-family: "NanumSquare", sans-serif;
+      transform: translate(30%, 250%);
+      font-size: 0.93vw;
+    }
+    .elipse {
+      width: 0vw;
+      height: 0vh;
+      z-index: 1;
+      transform-origin: -300% 300%;
+    }
+    .halfCircleBlue {
+      z-index: 10;
+      transform-origin: -300% 300%;
+      transform: translate(-313%, -358%);
+    }
+    .halfCircleRed {
+      z-index: 10;
+      transform-origin: -300% 300%;
+      transform: translate(-295%, -305%);
+    }
+    .AboutMe {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      transform: rotate(-24.66deg);
+      ul {
+        z-index: 10000;
+        list-style: none;
+        .tit {
+          transform: translate(-60%, -280%);
+        }
+        .html {
+          transform: translate(-100%, -400%);
+        }
+        .jquery {
+          transform: translate(-0%, -300%);
+        }
+        .css {
+          transform: translate(-150%, -200%);
+        }
+        .photoshop {
+          transform: translate(+30%, 50%);
+        }
+        .illustration {
+          transform: translate(-100%, 50%);
+        }
+        .vue {
+          transform: translate(-100%, 300%);
+        }
+        .react {
+          transform: translate(-0%, 500%);
+        }
+        li {
+          transform: translate(-50%, -50%);
+          h3 {
+            font-weight: 600;
+            font-size: 4vw;
+            line-height: 6vw;
+            color: #fff;
+          }
+          p {
+            font-size: 1.93vw;
+            line-height: 2.29vw;
+            color: #000;
+            em {
+              font-size: 1.09vw;
+              color: #6b6b6b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*section2*/
+
+#section3 {
+  .sec3 {
+    .box3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box_in_bubble {
+        font-size: 6.56vw;
+        color: #fff;
+        white-space: nowrap;
+        font-family: $font-nexonB;
+      }
+    }
+
+    .elipse3 {
+      transform-origin: -155% +165%;
+    }
+    .char3 {
+      background: url(../img/Saly-11.png);
+      background-size: cover;
+      width: 35.31vw;
+      height: 35.31vw;
+      transform: translate(-70%, -50%);
+    }
+    h3 {
+      .line1 {
+        position: relative;
+        transform: translate(0, 500%);
+      }
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      color: #fff;
+      font-size: 6.56vw;
+      text-align: right;
+      transform: translate(+10%, -60%);
+      white-space: nowrap;
+      line-height: 7.86vw;
+    }
+    .mockup_wrap {
+      .mockup1 {
+        transform: translate(-141%, -88%);
+        width: 37.97vw;
+        height: 28.49vw;
+      }
+      .mockup2 {
+        transform: translate(77%, -209%);
+        width: 27.81vw;
+        height: 24.64vw;
+      }
+      .mockup3 {
+        transform: translate(-108%, -199%);
+        width: 34.06vw;
+        height: 25.57vw;
+      }
+    }
+  }
+}
+#section4 {
+  .sec4 {
+    .char4 {
+      background: url(../img/Saly-19.png);
+      background-size: cover;
+      width: 39.17vw;
+      height: 39.17vw;
+      transform: translate(-10%, -70%);
+    }
+    .box4 {
+      width: 44.64vw;
+      height: 29.43vw;
+      background: rgba(255, 104, 9, 1);
+      transform: translate(-50%, -50%) rotate(-8.92deg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box_in_bubble {
+        font-size: 6.56vw;
+        color: #fff;
+        white-space: nowrap;
+        font-family: $font-nexonB;
+      }
+    }
+    .elipse4 {
+      transform: translate(-60%, 180%);
+      fill: rgba(221, 6, 1, 1);
+    }
+    .tit {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      color: #fff;
+      font-size: 6.56vw;
+      text-align: left;
+      transform: translate(-95%, -80%);
+      white-space: nowrap;
+      line-height: 7.875vw;
+    }
+    .mockup_wrap {
+      .mockup1 {
+        transform: translate(-145%, -67%);
+        width: 38.6979vw;
+        height: 32.7083vw;
+      }
+      .mockup3-1 {
+        transform: translate(108%, -199%);
+        width: 20.1042vw;
+        height: 16.0938vw;
+      }
+      .mockup3-2 {
+        transform: translate(-108%, -199%);
+        width: 3.3854vw;
+        height: 6.5104vw;
+      }
+      .mockup3-3 {
+        transform: translate(-108%, -199%);
+        width: 6.875vw;
+        height: 9.375vw;
+      }
+    }
+  }
+}
+#section5 {
+  .sec5 {
+    .char5 {
+      background: url(../img/Saly-10.png);
+      background-size: cover;
+      width: 39.6354vw;
+      height: 39.6354vw;
+      transform: translate(-10%, -70%);
+    }
+    .box5 {
+      width: 44.64vw;
+      height: 29.43vw;
+      background: rgba(255, 104, 9, 1);
+      transform: translate(-50%, -50%) rotate(-8.92deg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box_in_bubble {
+        font-size: 6.56vw;
+        color: #fff;
+        white-space: nowrap;
+        font-family: $font-nexonB;
+      }
+    }
+    .elipse5 {
+      transform: translate(-60%, 180%);
+      fill: rgba(221, 6, 1, 1);
+    }
+    .tit {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      color: #fff;
+      font-size: 6.56vw;
+      text-align: right;
+      transform: translate(-95%, -80%);
+      white-space: nowrap;
+      line-height: 7.875vw;
+    }
+    .mockup_wrap {
+      .mockup4-1 {
+        transform: translate(-142%, -89%);
+        width: 39.6875vw;
+        height: 27.5vw;
+      }
+      .mockup4-2 {
+        transform: translate(108%, -199%);
+        width: 21.0938vw;
+        height: 13.1771vw;
+      }
+      .mockup4-3 {
+        transform: translate(-108%, -199%);
+        width: 21.25vw;
+        height: 13.2292vw;
+      }
+      .mockup4-4 {
+        transform: translate(-108%, -199%);
+        width: 20.3125vw;
+        height: 12.6563vw;
+      }
+    }
+  }
+}
+#section6 {
+  .sec6 {
+    .char6 {
+      background: url(../img/Saly-12.png);
+      background-size: cover;
+      width: 42.4479vw;
+      height: 42.4479vw;
+      transform: translate(-10%, -70%);
+    }
+    .box6 {
+      width: 44.64vw;
+      height: 29.43vw;
+      background: rgba(255, 104, 9, 1);
+      transform: translate(-50%, -50%) rotate(-8.92deg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box_in_bubble {
+        font-size: 6.56vw;
+        color: #fff;
+        white-space: nowrap;
+        font-family: $font-nexonB;
+      }
+    }
+    .elipse6 {
+      transform: translate(-60%, 180%);
+      fill: rgba(221, 6, 1, 1);
+    }
+    .tit {
+      font-family: "NEXON Lv1 Gothic OTF Bold";
+      color: #fff;
+      font-size: 6.56vw;
+      text-align: right;
+      transform: translate(-95%, -80%);
+      white-space: nowrap;
+      line-height: 7.875vw;
+    }
+    .mockup_wrap {
+      .mockup6-1 {
+        transform: translate(-142%, -89%);
+        width: 39.6875vw;
+        height: 27.5vw;
+      }
+      .mockup6-2 {
+        transform: translate(108%, -199%);
+        width: 21.0938vw;
+        height: 13.1771vw;
+      }
+      .mockup6-3 {
+        transform: translate(-108%, -199%);
+        width: 21.25vw;
+        height: 13.2292vw;
+      }
+      .mockup6-4 {
+        transform: translate(-108%, -199%);
+        width: 20.3125vw;
+        height: 12.6563vw;
+      }
+    }
+  }
+}
